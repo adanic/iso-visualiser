@@ -7,3 +7,7 @@ ReactJS client to visualise ISO 8583 Financial transaction card originated messa
 npm i
 npm start
 ```
+<br>
+<h2 align="center">License</h2>
+
+[Adanic](http://adanic.ir)

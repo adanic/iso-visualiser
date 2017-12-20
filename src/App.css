@@ -1,0 +1,103 @@
+* {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.App-textarea {
+  width: 100%;
+  height: 100px;
+  outline: none;
+  resize: none;
+  overflow: auto;
+  border-radius: 5px;
+  border-color: #ccc;
+  background-color: #fcfcfc;
+  font-size: 15px;
+}
+.App-button {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  align-self: flex-end;
+  margin-top: 20px;
+  background-color: #222;
+  color: white;
+  width: 70px;
+  height: 30px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  border : none;
+}
+.App-button:hover{
+  background-color: #555;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 35px;
+  padding: 20px;
+  margin: 0;
+  color: white;
+}
+.App-header-text{
+  text-align: center;
+  margin: 0;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
+  
+  
+}
+
+.App-table td, .App-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.App-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.App-table tr:hover {background-color: #ddd;}
+
+.App-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: darkcyan;
+  color: white;
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

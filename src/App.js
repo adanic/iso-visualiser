@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { ISOUtil, ISOMsg } from 'jspos';
-import AsciiPackager from './ISOPackager'
+import AsciiPackager from './ISOPackager';
 
 
 

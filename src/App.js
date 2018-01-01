@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import './App.css';
-import { ISOUtil, ISOMsg } from 'jspos';
-import AsciiPackager from './ISOPackager';
+import { ISOUtil, ISOMsg } from 'jspos'
+import AsciiPackager from './ISOPackager'
 
 
 
@@ -23,6 +23,8 @@ class App extends Component {
     let array = []
     unpackMsg.unpack(ISOUtil.str2bytes(msg))
     console.log(unpackMsg.fields)
+    console.log(unpackMsg.getMTI())
+    array.push({"code":"MTI","value":unpackMsg.getMTI()})
     Object.keys(unpackMsg.fields).map(f => {
       if (parseInt(f) > 0) {
         if (  [52, 64,65,96,128].indexOf(parseInt(f)) !== -1 ) {
